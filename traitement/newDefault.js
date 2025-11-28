@@ -66,9 +66,9 @@ function addPill3(){
 //!Sauvergarde dans LocalStorage
 function saveAll(){
 const data = {
-    matin : [...LIST.querySelectorAll('li')].map(li => li.ChildNodes[0].textContent.trim()),
-    midi : [...LIST_TWO.querySelectorAll('li')].map(li => li.ChildNodes[0].textContent.trim()),
-    soir: [...LIST_THREE.querySelectorAll('li')].map(li => li.ChildNodes[0].textContent.trim()),
+    matin : [...LIST.querySelectorAll('li')].map(li => li.childNodes[0].textContent.trim()),
+    midi : [...LIST_TWO.querySelectorAll('li')].map(li => li.childNodes[0].textContent.trim()),
+    soir: [...LIST_THREE.querySelectorAll('li')].map(li => li.childNodes[0].textContent.trim()),
 }
 localStorage.setItem('pillsData', JSON.stringify(data)); 
 }
@@ -82,13 +82,13 @@ function loadAll(){
     if (!saved) return; 
 
     //Matin
-    saved.matin.forEach(text => createElement(text, LIST)); 
+    saved.matin.forEach(text => createItem(text, LIST)); 
 
     //Midi
-    saved.midi.forEach(text => createElement(text,LIST_TWO)); 
+    saved.midi.forEach(text => createItem(text,LIST_TWO)); 
 
     //Soir
-    saved.soir.forEach(text=>createElement(text, LIST_THREE)); 
+    saved.soir.forEach(text=>createItem(text, LIST_THREE)); 
 }
 
 //!Charger quand la page démarre

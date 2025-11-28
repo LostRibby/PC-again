@@ -2,7 +2,7 @@ const INPUT = document.getElementById('ant');
 const LIST = document.getElementById('list');
 
 // Charger la liste au démarrage
-window.addEventListener('DOMContentLoaded', loadList);
+window.addEventListener('DOMContentLoaded', loadList2);
 
 function addIssue() {
 
@@ -46,7 +46,7 @@ function saveList2() {
 }
 
 // Recharge la liste à partir du localStorage
-function loadList() {
+function loadList2() {
   const saved2 = localStorage.getItem('ant_list');
   if (!saved2) return;
 

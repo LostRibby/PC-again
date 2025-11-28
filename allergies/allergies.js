@@ -51,10 +51,10 @@ function loadList() {
   if (!saved) return;
 
   const items = JSON.parse(saved);
-  items.forEach(text => createListItem2(text));
+  items.forEach(text => createListItem(text));
 }
 
-console.log();
+
 
 
 
@@ -111,10 +111,10 @@ function loadList2() {
   const saved2 = localStorage.getItem('food_list');
   if (!saved2) return;
 
-  const items = JSON.parse(saved2);
-  items.forEach(text => createListItem2(text));
+  const items2 = JSON.parse(saved2);
+  items2.forEach(text => createListItem2(text));
 }
-console.log();
+
 
 //!----------------------------------------------------
 //!----------------------------------------------------------
@@ -130,7 +130,7 @@ function addEnvi() {
   if (!envi) return;
 
   createListItem3(envi);
-  saveList2();  // sauvegarde après ajout
+  saveList3();  // sauvegarde après ajout
 
   INPUT3.value = '';
 }
@@ -147,7 +147,7 @@ function createListItem3(text) {
 
   deleteButton.addEventListener('click', () => {
     li3.remove();
-    saveList2(); // sauvegarde après suppression
+    saveList3(); // sauvegarde après suppression
   });
 
   li3.appendChild(span3);
@@ -156,7 +156,7 @@ function createListItem3(text) {
 }
 
 // Sauvegarde la liste dans localStorage
-function saveList2() {
+function saveList3() {
   const items3= [];
   LIST3.querySelectorAll('li span').forEach(span => {
     items3.push(span.textContent);
@@ -173,4 +173,3 @@ function loadList3() {
   const items = JSON.parse(saved3);
   items.forEach(text => createListItem3(text));
 }
-console.log();

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="allergies.css">
+    <script defer src="/allergies/allergies.js"></script>
+
+    <title>Mes_Allergies</title>
+</head>
+
+<body>
+    <header>
+        <div class="entete">
+            
+            <button class="retour"><a href="../Accueil.html"><img src="/images/Logo_PillCraft.svg"
+                        alt="Logo de PillCraft/bouton retour"></a></button>
+                        
+            <H1>Mes allergies</H1>
+        </div>
+    </header>
+    <div class="container">
+         <div class="comment">
+            <p class="explication">
+                ⨀ Si vous utilisez cette page, vous pouvez l’utiliser afin de répertorier vos allergies connues. 
+            </p>
+         </div>
+        <div class="allergies">
+
+
+            <div class="Medicaments">
+
+                <label for="med">Allergies médicamenteuses</label><br>
+
+                <input id="med" placeholder="nom médicament..." type="text">
+
+                <button class="add" onclick="addPill()">Ajouter</button>
+
+                <ul id="list"></ul>
+            </div>
+
+            <div class="Aliments">
+
+                <label for="food">Allergies Alimentaires</label><br>
+
+                <input id="food" placeholder="nom aliment..." type="text">
+
+                <button class="add" onclick="addFood()">Ajouter</button>
+
+                <ul id="food_list"></ul>
+            </div>
+
+            <div class="Environnement">
+
+                <label for="envi">Allergies Environnementales</label><br>
+
+                <input id="envi" placeholder="nom allergie..." type="text">
+
+                <button class="add" onclick="addEnvi()">Ajouter</button>
+
+                <ul id="envi_list"></ul>
+            </div>
+        </div>
+    </div>
+
+     <footer>
+        <div class="contenu-footer">
+            <div class="contact">
+                <h3>Comment nous contacter</h3>
+                <p>555-555-555</p>
+                <p>email@contact.com</p>
+            </div>
+
+            <div class="résaux">
+                <a href="https://www.facebook.com/"><img src="../images/facebook.png"  alt="logo facebook" class="resau"></a></li>
+                <a href="https://www.instagram.com/"><img src="../images/logoinsta.png" alt="logo instagram" class="resau"></a></li>
+                <a href="https://x.com/"><img src="../images/xlogo.png" alt="logo X" class="resau"></a></li>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

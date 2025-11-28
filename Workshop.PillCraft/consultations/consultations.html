@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/consultations/consultation.css">
+
+  <title>Mes consultations</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="titre">
+      <button class="accueil"><a href="/Accueil.html"><img src="/images/Logo_PillCraft.svg" alt="bouton accueil"
+            class="logo"></a></button>
+      <h1>Mes consultations</h1>
+    </div>
+  </header>
+
+      <div class="comment">
+            <p class="explication">
+                ⨀ Si vous utilisez cette page, vous pouvez l’utiliser afin de répertorier vos prochaines consultations. 
+            </p>
+         </div>
+
+  <div id="nav">
+    <button onclick="prevMonth()" class="navbtn">◀ Mois pécédent</button>
+    <span id="current-month"></span>
+    <button onclick="nextMonth()" class="navbtn">Mois suivant ▶</button>
+  </div>
+  <div class="cont">
+    <div id="weekdays">
+      <div>Lun</div>
+      <div>Mar</div>
+      <div>Mer</div>
+      <div>Jeu</div>
+      <div>Ven</div>
+      <div>Sam</div>
+      <div>Dim</div>
+    </div>
+
+    <div id="calendar"></div>
+  </div>
+
+
+  <div id="event-viewer">
+
+    <h3>Événement</h3>
+
+    <p id="event-viewer-date"></p>
+    <p id="event-viewer-title"></p>
+    <div class="boutons">
+      <button id="delete-Btn">Effacer</button>
+
+      <button onclick="closeEventViewer()" class="close">fermer</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="event-form">
+      <h2>Ajouter un rendez-vous</h2>
+      <input type="date" id="event-date">
+      <input type="text" id="event-title" placeholder="Nom de l'évènement">
+
+      <button onclick="addEvent()" class="ajouter">Ajouter</button>
+    </div>
+  </div>
+  </div>
+
+
+  <footer>
+    <div class="contenu-footer">
+      <div class="contact">
+        <h3>Comment nous contacter</h3>
+        <p>555-555-555</p>
+        <p>email@contact.com</p>
+      </div>
+
+      <div class="résaux">
+        <a href="https://www.facebook.com/"><img src="/images/facebook.png" alt="logo facebook" class="resau"></a></li>
+        <a href="https://www.instagram.com/"><img src="/images/logoinsta.png" alt="logo instagram" class="resau"></a>
+        </li>
+        <a href="https://x.com/"><img src="/images/xlogo.png" alt="logo X" class="resau"></a></li>
+      </div>
+
+
+      <script src="../symptomes/calendar.js"></script>
+</body>
+
+</html>

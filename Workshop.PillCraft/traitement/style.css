@@ -1,0 +1,294 @@
+@media all and (min-width : 600px){
+*{
+    padding : 0;
+    margin: 0 ; 
+    box-sizing: border-box;
+    font-family:cursive;
+}
+body{ 
+    display: flex; 
+    justify-content: center;
+    align-items : center; 
+    height : auto;
+    background-image : url(/images/plush.jpg);
+   flex-direction: column;
+}
+header{
+    opacity: 0.9;
+    background-color: #040f0f;
+    color:#ffffff; 
+    width: 100%;
+      margin-top : 0;
+    padding-top: 0;
+    position: absolute; 
+    top:0px; 
+   img{
+    width:20%;
+   }
+   
+   .entete{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+ 
+   }
+   h1{
+    display: flex; 
+    justify-content: center;
+
+   }
+} 
+
+.container1{
+    background-color: #87cfd6;
+    padding : 5%;
+    border-radius: 15px;
+    margin :10% 5% ;
+  opacity: 0.8;
+}
+.explication{
+    background-color: #ddd;
+    color : Black; 
+    border-radius: 10px; 
+    margin: 0  0 2% 0;
+padding: 5%;
+}
+.traitement{ 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2%;
+    justify-items: center;
+}
+.matin, .midi, .soir{
+   text-align: center;
+   padding : 20px; 
+   background-color: #e2a3c7;
+   box-shadow: 0 0 10px #040f0f; 
+   border-radius: 15px;
+   width : 80%;
+   height: auto;
+}
+label { 
+    font-weight: bold;
+    font-size: 20px;
+}
+input{ 
+    width: 80%;
+    border: 1px solid #ddd; 
+    border-radius : 4px;
+    padding: 2%; 
+    margin-bottom: 2px;
+}
+
+ul{
+    list-style: none;
+    padding: 0; 
+}
+
+li{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding :10% 0; 
+    border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+#add, #aj, #ajout{
+    padding : 2%;
+    border : none; 
+    background-color: #040f0f;
+    color: white; 
+    cursor: pointer; 
+    border-radius: 4px;
+}    
+
+.delete-btn{
+    padding : 2%;
+    border : none;
+    background-color: rgb(179, 37, 37);
+    color: white; 
+    cursor: pointer; 
+    border-radius: 4px;
+}
+
+.checkbox {
+    width : 20px;
+    height : 20px;
+
+}
+footer{
+     height : auto; 
+     width : 100%;
+     font-size: 16px;
+     background: #d389ae; 
+     opacity : 0.8; 
+        color: white;
+        text-align: center;
+        padding: 15px;
+}
+.titre-services{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    font-weight:bolder;
+    margin: 3%;
+    padding: 1%;
+    color:#333;
+}
+
+.resau{
+    width : 100px;
+}
+}
+
+@media all and (max-width: 600px) {
+    *{
+margin : 0;
+padding: 0;
+box-sizing: border-box;
+font-family: cursive; 
+}
+
+body { 
+        display: flex; 
+    justify-content: center;
+    align-items : center; 
+    height : auto;
+    background-image : url(/images/plush.jpg);
+   flex-direction: column;
+}
+header{
+    opacity: 0.9;
+    background-color: #040f0f;
+    color:#ffffff; 
+    width: 100%;
+      margin-top : 0;
+    padding-top: 0;
+    position: absolute; 
+    top:0px;
+  }
+
+   img{
+    width:80%;
+   }
+   
+   .entete{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+ 
+   }
+   h1{
+    display: flex; 
+    justify-content: center;
+
+   }
+.container1{
+    background-color: #87cfd6;
+    padding : 5%;
+    border-radius: 15px;
+    margin :  35% 10%;
+  opacity: 0.8;
+}
+.explication{
+    background-color: #ddd;
+    color : Black; 
+    border-radius: 10px; 
+    margin: 0  0 2% 0;
+padding: 5%;
+}
+.traitement{ 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 7%;
+    justify-items: center;
+       display:flex;
+   flex-direction: column;
+   
+
+}
+.matin, .midi, .soir{
+   padding : 20px; 
+   background-color: #e2a3c7;
+   box-shadow: 0 0 10px #040f0f; 
+   border-radius: 15px;
+   width : 80%;
+   height: auto;
+    margin : 5%;
+}
+label { 
+    font-weight: bold;
+    font-size: 20px;
+}
+input{ 
+    width: 70%;
+    border: 1px solid #ddd; 
+    border-radius : 4px;
+    padding: 2%; 
+    margin-bottom: 2px;
+}
+
+ul{
+    list-style: none;
+    padding: 0; 
+}
+
+li{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding :10% 0; 
+    border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+#add, #aj, #ajout{
+    padding : 2%;
+    border : none; 
+    background-color: #040f0f;
+    color: white; 
+    cursor: pointer; 
+    border-radius: 4px;
+}   
+
+
+.delete-btn{
+    padding : 2%;
+    border : none;
+    background-color: rgb(179, 37, 37);
+    color: white; 
+    cursor: pointer; 
+    border-radius: 4px;
+}
+.checkbox {
+    width : 20px;
+    height : 20px;
+
+}
+footer{
+     height : auto; 
+     width : 100%;
+     font-size: 16px;
+     background: #d389ae; 
+     opacity : 0.8; 
+        color: white;
+        text-align: center;
+        padding: 15px;
+}
+.titre-services{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    font-weight:bolder;
+    margin: 3%;
+    padding: 1%;
+    color:#333;
+}
+
+.resau{
+    width : 100px;
+}
+}

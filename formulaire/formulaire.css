@@ -1,0 +1,157 @@
+@media all and (min-width: 600px) {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(/images/medocs.jpg);
+    font-family: cursive;
+    width : 100%; 
+    min-height : 100vh;
+}
+header{
+    background: #040F0F;
+  height : 10%; 
+    display: flex;
+    justify-content: center;
+    opacity: 0.9;
+}
+h1{
+ font-size:60px; 
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+    color : #a1567c;
+}
+.logo{
+    width : 100px; 
+    height : 250px;
+}
+.container-form{
+    background: url(/images/paper.jpg);
+    width : 40%; 
+    height : 100%; 
+    margin: 10% 32.5%;
+    border-radius: 15px;
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.2), 6px 6px 0 rgba(0,0,0,0.2), 9px 9px 0 rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    padding: 40px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+    
+}
+
+footer{
+     height : auto; 
+     font-size: 22px;
+     background: #666459; 
+     opacity : 0.8; 
+        color: white;
+        text-align: center;
+        padding: 15px;
+        
+}
+footer img{
+    width : 100px;
+}
+input{
+    width : 200px;
+    height : 40px; 
+}
+
+label{
+    display: flex;
+    justify-content:center;
+    font-weight: bolder;
+}}
+
+
+@media all and (max-width : 600px) {
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(/images/medocs.jpg);
+    font-family: cursive;
+    width : 100%; 
+    min-height : 100vh;
+}
+header{
+    background: #040F0F;
+  height : 10%; 
+    display: flex;
+    justify-content: center;
+    opacity: 0.9;
+}
+h1{
+ font-size:50px; 
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+    color : #a1567c;
+}
+.logo{
+    width : 75px; 
+    height : 120px;
+    display: flex;
+    justify-content: center;
+}
+.container-form{
+    background: url(/images/paper.jpg);
+    width : 80%; 
+    height : 100%; 
+   margin : 10%;
+    border-radius: 15px;
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.2), 6px 6px 0 rgba(0,0,0,0.2), 9px 9px 0 rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    padding: 20px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+    
+}
+
+footer{
+     height : auto; 
+     font-size: 18px;
+     background: #666459; 
+     opacity : 0.8; 
+        color: white;
+        text-align: center;
+        padding: 15px;
+        
+}
+footer img{
+    width :60px;
+}
+input{
+    width : 100px;
+    height : 40px; 
+}
+
+label{
+    display: flex;
+    justify-content:center;
+    font-weight: bolder;
+}
+}

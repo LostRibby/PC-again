@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulaire.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+<a href="/Accueil.html"><img src="/images/Logo_PillCraft.svg" alt="Logo" class="logo"></a>
+        <h1>PillCraft</h1>
+    </header>
+    <main>
+    <div class="container-form">
+        <form method="post" action="javascript:Void(0)" class="form">
+            <div class="lastname">
+                <label for="lastname">Nom</label>
+                <input autofocus id="lastname" name="lastname" type="text" placeholder="ex:Peeters..." minlength="2"
+                    required>
+            </div>
+
+            <div class="firstname">
+                <label for="firstname">Prénom</label>
+                <input id="firstname" name="firstname" placeholder="ex:Anna..." type="text" minlength="2">
+            </div>
+
+            <div class="email">
+                <label for="email">Email</label>
+                <input id="email" name="email" placeholder="Email" type="email" required>
+            </div>
+
+            <div class="tel">
+                <label for="tel">Téléphone</label>
+                <input id="tel" name="tel" placeholder="Numéro de Téléphone" type="tel" required>
+            </div>
+
+            <div class="message">
+                <label for="mess">Message</label>
+                <textarea id="mess" name="message" maxlength="250"></textarea>
+            </div>
+
+        </form>
+    </div>
+    </main>
+    <footer>
+         <div class="contenu-footer">
+            <div class="contact">
+                <h3>Comment nous contacter</h3>
+                <p>555-555-555</p>
+                <p>email@contact.com</p>
+            </div>
+
+            <div class="résaux">
+                <a href="https://www.facebook.com/"><img src="/images/facebook.png"  alt="logo facebook" class="resau"></a></li>
+                <a href="https://www.instagram.com/"><img src="/images/logoinsta.png" alt="logo instagram" class="resau"></a></li>
+                <a href="https://x.com/"><img src="/images/xlogo.png" alt="logo X" class="resau"></a></li>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

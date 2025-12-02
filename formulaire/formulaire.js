@@ -14,8 +14,8 @@ const lastname = document.getElementById('lastname').value.trim();
     const mess = document.getElementById('mess').value.trim();
 
     if(lastname ===''||firstname ===''||email ==='' ||tel ==='' ||mess === ''){
-        MESSAGE.style.color = "red";
-        MESSAGE.style.background = "Bisque";
+        MESSAGE.style.color = "white";
+        MESSAGE.style.background = "darkred";
         MESSAGE.textContent = 'Veillez à remplir les champs Vides.';
         return;  
     }

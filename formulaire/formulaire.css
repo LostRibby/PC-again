@@ -135,6 +135,13 @@ h1{
     display: flex;
     justify-content: center;
 }
+#message{
+display:flex; 
+justify-content: center;
+align-items: center; 
+width: auto;
+margin : 1%;
+}
 .container-form{
     background: url(/images/paper.jpg);
     width : 80%; 

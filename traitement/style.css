@@ -12,6 +12,7 @@ body{
     height : auto;
     background-image : url(/images/plush.jpg);
    flex-direction: column;
+   width : 100%;
 }
 header{
     opacity: 0.9;
@@ -132,6 +133,8 @@ footer{
         color: white;
         text-align: center;
         padding: 15px;
+        position: absolute;
+        bottom : 0;
 }
 .titre-services{
     font-size: 20px;

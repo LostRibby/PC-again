@@ -21,6 +21,7 @@ header{
     height : 10%; 
     display: flex;
     justify-content: center;
+    
     opacity: 0.9;
 }
 header .logo{
@@ -99,7 +100,7 @@ color : white;
 }
 
 .event{
-    background: #f1a7f1; 
+    background: #ffe3ff; 
     color: rgb(59, 42, 92); 
     padding: 2px 5px;
     margin-top: 5px;
@@ -144,29 +145,35 @@ color : white;
     margin-top:3%;
      padding:15px; 
      border:1px solid #884d7e; 
-     background: #c894b7;
+     background: #916883;
      border-radius: 8px; 
      display:none;
 }
 
 
 #event-form{
-    margin: 3% 45%;
+    margin: 3% 40%;
+    background-color: #435e5e;
+    width : 25%;
+    border-radius: 15px;
+
 }
 
 #event-form h2{
     display: flex;
-    color :rgb(59, 42, 92);
+    color :rgb(214, 218, 183);
     justify-content :center;
     align-items: center;
 }
+
 input{
     margin : 3%;
-    width: 150px; 
+    width: 200px; 
     height : 45px; 
-    background-color: #dec6c6;
+    background-color: #fdf6f6;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     border: none; 
     color:#8f3131;
@@ -200,14 +207,15 @@ input{
                 width: 150px;
     height : 40px;
     border-radius: 10px;
-    background-color: rgb(54, 54, 94);
-    color : white; 
+    background-color: rgb(214, 218, 183);
+    color : rgb(0, 0, 0); 
     border : none; 
      margin: 5% 
     }
     .today {
-  background: #f8e19b !important;
-  border: 2px solid #805322 !important;
+  background: #ccb56f;
+  color : black;
+  border: 2px solid #805322;
   
 }
 .resau{

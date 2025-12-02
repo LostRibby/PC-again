@@ -66,9 +66,9 @@ function addPill3(){
 //!Sauvergarde dans LocalStorage
 function saveAll(){
 const data = {
-    matin : [...LIST.querySelectorAll('li')].map(li => li.childNodes[0].textContent.trim()),
-    midi : [...LIST_TWO.querySelectorAll('li')].map(li => li.childNodes[0].textContent.trim()),
-    soir: [...LIST_THREE.querySelectorAll('li')].map(li => li.childNodes[0].textContent.trim()),
+    matin : [...LIST.querySelectorAll('li')].map(li => li.childNodes[0].textContent.trim()), //! expliquer le code pour la pésentation
+    midi : [...LIST_TWO.querySelectorAll('li')].map(li => li.childNodes[0].textContent.trim()), //! expliquer le code pour la pésentation
+    soir: [...LIST_THREE.querySelectorAll('li')].map(li => li.childNodes[0].textContent.trim()), //! expliquer le code pour la pésentation
 }
 localStorage.setItem('pillsData', JSON.stringify(data)); 
 }
